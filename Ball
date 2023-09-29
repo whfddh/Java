@@ -53,5 +53,4 @@ public class Ball
     {
         System.out.println("The momentum of the ball is  " + weight*speed);
     }
-
 }
