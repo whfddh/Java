@@ -1,0 +1,12 @@
+public class BookTester {
+    public static void main(String[] args) {
+        Book book_1 = new Book("1984", "George Orwell", 1289);
+        Book book_2 = new Book("Warrior Cats: Fire and Ice.", "Erin Hunter", 999);
+        Book book_3 = new Book("The overloaded ark", "Gerald Durrell", 1387);
+        book_3.setPrice(599);
+        System.out.println(book_3);
+        book_1.bookDiscount();
+        book_2.bookDiscount();
+        book_3.bookDiscount();
+    }
+}
