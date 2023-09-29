@@ -34,7 +34,7 @@ public class Dog {
     }
     public String toString()
     {
-        return "Name: " + this.name + "\n" + "Age: " + this.age;
+        return "Name: " + this.name + "Age: " + this.age;
     }
     public void intoHumanAge()
     {
