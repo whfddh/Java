@@ -47,7 +47,7 @@ public class Ball
     }
     public String toString()
     {
-        return "Ball type: " + this.type + "\n" + "Ball weight: " + this.weight + "\n" + "Ball speed: " + this.speed;
+        return "Ball type: " + this.type + "Ball weight: " + this.weight + "Ball speed: " + this.speed;
     }
     public void ballMomentum()
     {
