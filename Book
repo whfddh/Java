@@ -1,0 +1,51 @@
+public class Book {
+    private String title;
+    private String author;
+    private double price;
+
+    public Book(String t, String a, double p)
+    {
+        title = t;
+        author = a;
+        price = p;
+    }
+    public Book()
+    {
+        title = "unknown";
+        author = "unknown";
+        price = 0;
+    }
+    public void setName(String t)
+    {
+        this.title = t;
+    }
+    public void setAuthor(String a)
+    {
+        this.author = a;
+    }
+    public void setPrice(double p)
+    {
+        this.price = p;
+    }
+    public String getTitle()
+    {
+        return this.title;
+    }
+    public String getAuthor()
+    {
+        return this.author;
+    }
+    public double getPrice()
+    {
+        return this.price;
+    }
+    public String toString()
+    {
+        return "Book title: " + this.title + "\n" + "Book author: " + this.author + "\n" + "Book price: " + this.price;
+    }
+    public void bookDiscount()
+    {
+        System.out.println("Discount on the book is " + (price*20)/100 + " rubles.");
+    }
+
+}
