@@ -41,7 +41,7 @@ public class Book {
     }
     public String toString()
     {
-        return "Book title: " + this.title + "\n" + "Book author: " + this.author + "\n" + "Book price: " + this.price;
+        return "Book title: " + this.title + "Book author: " + this.author + "Book price: " + this.price;
     }
     public void bookDiscount()
     {
