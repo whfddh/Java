@@ -1,0 +1,9 @@
+public class AuthorTester {
+    public static void main(String[] args){
+        Author author = new Author ("Jane", "jane@gmail.com", 'F');
+        System.out.println("Author information: " + author);
+        System.out.println("Name: " + author.getName());
+        author.setEmail("jane@mail.ru");
+        System.out.println("New email: " + author.getEmail());
+    }
+}
