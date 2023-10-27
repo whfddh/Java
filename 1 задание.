@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {2, 2, 10, 3, 7};
+
+        //Цикл for.
+        int sumFor = 0;
+        for (int i = 0; i < array.length; i++) {
+            sumFor += array[i];
+        }
+        System.out.println("Сумма (for): " + sumFor);
+
+        //Цикл while
+        int sumWhile = 0;
+        int indexWhile = 0;
+        while (indexWhile < array.length) {
+            sumWhile += array[indexWhile];
+            indexWhile++;
+        }
+        System.out.println("Сумма (while): " + sumWhile);
+
+        //Цикл do-while
+        int sumDoWhile = 0;
+        int indexDoWhile = 0;
+        do {
+            sumDoWhile += array[indexDoWhile];
+            indexDoWhile++;
+        } while (indexDoWhile < array.length);
+        System.out.println("Сумма (do-while): " + sumDoWhile);
+    }
+}
