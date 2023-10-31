@@ -1,0 +1,31 @@
+public  class Circle {
+    private double radius;
+    private double diameter;
+    public Circle (double radius, double diameter){
+        this.radius = radius;
+        this.diameter = diameter;
+    }
+    public double getRadius(){
+        return radius;
+    }
+    public double getDiameter(){
+        return  diameter;
+    }
+    public void setRadius(double radius){
+        this.radius = radius;
+        this.diameter = 2*radius;
+    }
+    //public void setDiameter(double radius){
+        //this.diameter = 2*radius;}
+    public double getNewDiameter(){
+         return diameter;
+    }
+
+    public double getLength(){
+        return (2*Math.PI*radius);
+    }
+    public String toString(){
+        return "Circle radius: " + radius + '\n' + "Circle diameter: " + diameter;
+    }
+
+}
