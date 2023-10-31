@@ -1,0 +1,16 @@
+public class Leg extends Human{
+    private String SideLeg;
+    public Leg(String SideLeg){
+        super();
+        this.SideLeg = SideLeg;
+    }
+    public void setSideLeg(String SideLeg) {
+        this.SideLeg = SideLeg;
+    }
+    public String getSideLeg(){
+        return SideLeg;
+    }
+    public void stamp(){
+        System.out.println("Человек топнул" + SideLeg + "ногой.");
+    }
+}
