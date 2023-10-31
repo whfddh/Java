@@ -1,0 +1,13 @@
+public class CircleTest {
+    public static void main(String[] args){
+        Circle circle = new Circle(10.0, 20.0);
+        System.out.println("Circle information." + '\n' + circle);
+        //System.out.println(circle);
+        System.out.println("Circle length: " + circle.getLength());
+        System.out.println("Changed radius: ");
+        circle.setRadius(12);
+        System.out.println(circle.getRadius());
+        System.out.println("Changed diameter: " + circle.getNewDiameter());
+        System.out.println("New circle length: " + circle.getLength());
+    }
+}
