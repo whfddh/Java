@@ -1,10 +1,10 @@
 public class TestBook {
     public static void main(String[] args){
-        Book book = new Book("J. McGill","b b", 2013);
+        Book book = new Book("Gerald Durrell","The overloaded ark", 1952);
         System.out.println(book);
-        book.setAuthor("Saul Goodman");
-        book.setName("b c s");
-        book.setYear(2004);
+        book.setAuthor("Erin Hunter");
+        book.setTitle("Warrior Cats: Fire and Ice.");
+        book.setYear(2003);
         System.out.println(book);
     }
 }
