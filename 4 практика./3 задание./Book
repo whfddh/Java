@@ -1,10 +1,9 @@
 public class Book {
     private String Author;
-    private String name;
-
+    private String title;
     private int year;
 
-    public Book(String Author,String name, int year){
+    public Book(String Author, String title, int year){
         this.Author = Author;
         this.year = year;
     }
@@ -22,17 +21,14 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
-    public String getName(){
-        return name;
+    public String getTitle(){
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
-
-    @Override
     public String toString() {
-        return "Book info: (" +
-                "Author ='" + Author + '\'' + ", name ='" + name + '\'' + ", year =" + year + ')';
+        return "Book information." + 'n' + "Author: " + Author + 'n\' + "Title: " + title + '\n' + "Year: " + year;
     }
 }
