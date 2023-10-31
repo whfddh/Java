@@ -1,0 +1,84 @@
+public class Hand {
+    private int fingerCount;
+
+    public Hand(int fingerCount) {
+        this.fingerCount = fingerCount;
+    }
+
+    public void grab() {
+        System.out.println("Я беру что-то...");
+    }
+}
+
+
+
+
+
+public class Head {
+    private String hairColor;
+
+    public Head(String hairColor) {
+        this.hairColor = hairColor;
+    }
+
+    public void think() {
+        System.out.println("Я думаю...");
+    }
+}
+
+
+
+
+public class Leg {
+    private int lengthInCentimeters;
+
+    public Leg(int lengthInCentimeters) {
+        this.lengthInCentimeters = lengthInCentimeters;
+    }
+
+    public void walk() {
+        System.out.println("Я иду...");
+    }
+}
+
+
+
+
+
+
+public class Human {
+    private Head head;
+    private Leg leftLeg;
+    private Leg rightLeg;
+    private Hand leftHand;
+    private Hand rightHand;
+
+    public Human(Head head, Leg leftLeg, Leg rightLeg, Hand leftHand, Hand rightHand) {
+        this.head = head;
+        this.leftLeg = leftLeg;
+        this.rightLeg = rightLeg;
+        this.leftHand = leftHand;
+        this.rightHand = rightHand;
+    }
+
+    public void doHumanThings() {
+        head.think();
+        leftLeg.walk();
+        rightLeg.walk();
+        leftHand.grab();
+        rightHand.grab();
+    }
+
+    public static void main(String[] args) {
+        Head myHead = new Head("Brown");
+        Leg myLeftLeg = new Leg(90);
+        Leg myRightLeg = new Leg(90);
+        Hand myLeftHand = new Hand(5);
+        Hand myRightHand = new Hand(5);
+
+        Human me = new Human(myHead, myLeftLeg, myRightLeg, myLeftHand, myRightHand);
+
+        me.doHumanThings();
+    }
+}
+
