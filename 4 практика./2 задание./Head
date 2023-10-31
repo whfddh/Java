@@ -1,0 +1,16 @@
+public class Head extends Human{
+    private String HairColour;
+    public Head(String HairColour) {
+        super();
+        this.HairColour = HairColour;
+    }
+    public String getHairColour() {
+        return HairColour;
+    }
+    public void setHairColour(String HairColour) {
+        this.HairColour = HairColour;
+    }
+    public void shake(int times){
+    System.out.println("Человек качнул головой " + times + "раз");
+    }
+}
