@@ -1,0 +1,7 @@
+public class Circle extends Shape{
+    //public void move(String figureShape){}
+
+    public void move(){
+        System.out.println( "Круг катится по поверхности.");
+    }
+}
