@@ -1,0 +1,5 @@
+public class Cone extends Shape{
+    public void move() {
+        System.out.println("Конус скользит по поверхности.");
+    }
+}
