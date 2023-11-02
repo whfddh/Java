@@ -1,0 +1,12 @@
+public class ShapeTest {
+    public static void main(String[] args){
+        Circle circle = new Circle();
+        circle.move();
+        circle.setVolume(14.897);
+        System.out.println("Объём круга равен " + circle.getVolume() + ".");
+        Cone cone = new Cone();
+        cone.move();
+        cone.setVolume(18.456);
+        System.out.println("Объём конуса равен " + cone.getVolume() + ".");
+    }
+}
