@@ -1,0 +1,13 @@
+public class Cup extends Dish {
+    private boolean handle;
+    public Cup(String color, int size, String material, boolean handle){
+        super(color, material, size);
+        this.handle = handle;
+    }
+    public boolean isHandle() {
+        return handle;
+    }
+    public void usage(){
+        System.out.println("Чашка");
+    }
+}
