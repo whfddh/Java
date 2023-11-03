@@ -1,0 +1,20 @@
+public class DishTest {
+    public static void main(String[] args){
+        Cup cup = new Cup("зелёный", 2, "фарфор", true);
+        Plate plate = new Plate("белый", "стекло", 3);
+        Spoon spoon = new Spoon("дюралюминий", "серый", 1);
+        cup.usage();
+        System.out.println("Материал чашки: " +cup.getMaterial());
+        System.out.println("Цвет чашки: " + cup.getColor());
+        System.out.println("Размер чашки: " + cup.getSize());
+        System.out.println("Ручка: " + (cup.isHandle() ? "Да" : "Нет"));
+        plate.usage();
+        System.out.println("Материал тарелки: " + plate.getMaterial());
+        System.out.println("Цвет тарелки: " + plate.getColor());
+        System.out.println("Размер тарелки: " + plate.getSize());
+        spoon.usage();
+        System.out.println("Материал ложки: " + spoon.getMaterial());
+        System.out.println("Цвет ложки: " + spoon.getColor());
+        System.out.println("Размер ложки: " + spoon.getSize());
+    }
+}
