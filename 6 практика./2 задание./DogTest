@@ -1,0 +1,11 @@
+public class DogTest {
+    public static void main(String[] args){
+        Malamute malamute = new Malamute("Bilancia", 10);
+        Spitz spitz = new Spitz(3, "Aetenae");
+        System.out.println("Информация о собаке: ");
+        System.out.println(spitz);
+        spitz.givePaw();
+        System.out.println("Информация о собаке: " + malamute.toString());
+        malamute.givePaw();
+    }
+}
