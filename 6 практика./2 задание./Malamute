@@ -1,0 +1,11 @@
+public class Malamute extends Dog{
+    public Malamute(String name, int age){
+        super(name, age);
+    }
+    public void givePaw() {
+        System.out.println("Маламут по кличке: " + getName() + " подаёт лапу.");
+    }
+    public String toString() {
+        return (getName() + " " + getAge());
+    }
+}
