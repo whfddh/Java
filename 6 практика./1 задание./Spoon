@@ -1,0 +1,8 @@
+public class Spoon extends Dish{
+    public Spoon(String material, String color, int size){
+        super(color, material, size);
+    }
+    public void usage() {
+        System.out.println("Ложка");
+    }
+}
