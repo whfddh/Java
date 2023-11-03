@@ -1,0 +1,11 @@
+public class Spitz extends Dog{
+    public Spitz(int age, String name){
+        super(name, age);
+    }
+    public void givePaw() {
+        System.out.println("Шпиц по кличке: "+ getName()+  " не подал лапу.");
+    }
+    public String toString() {
+        return (this.getName() + " " + this.getAge());
+    }
+}
