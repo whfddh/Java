@@ -1,0 +1,13 @@
+public class DogTester {
+    public static void main(String[] args)
+    {
+        Dog dog_1 = new Dog("Cheezer", 10);
+        Dog dog_2 = new Dog("Bilancia", 6);
+        Dog dog_3 = new Dog("Pumpam");
+        dog_3.setAge(1);
+        System.out.println(dog_1);
+        dog_1.intoHumanAge();
+        dog_2.intoHumanAge();
+        dog_3.intoHumanAge();
+    }
+}
