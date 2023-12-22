@@ -1,0 +1,56 @@
+public class Ball
+{
+    private String type;
+    private double weight;
+    private double speed;
+
+    public Ball(String t, double w, double s)
+    {
+        type = t;
+        weight = w;
+        speed = s;
+    }
+    public Ball(double s)
+    {
+        type = "football";
+        weight = 1;
+        speed = s;
+    }
+    public Ball(){
+        type = "football";
+        weight = 1;
+        speed = 1;
+    }
+    public void setType(String t)
+    {
+        this.type = t;
+    }
+    public void setWeight(double w)
+    {
+        this.weight = w;
+    }
+    public void setSpeed(double s)
+    {
+        this.speed = s;
+    }
+    public String getType()
+    {
+        return type;
+    }
+    public double getWeight()
+    {
+        return weight;
+    }
+    public double getSpeed()
+    {
+        return speed;
+    }
+    public String toString()
+    {
+        return "Ball type: " + this.type + "Ball weight: " + this.weight + "Ball speed: " + this.speed;
+    }
+    public void ballMomentum()
+    {
+        System.out.println("The momentum of the ball is  " + weight*speed);
+    }
+}
