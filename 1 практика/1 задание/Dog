@@ -1,0 +1,43 @@
+public class Dog {
+    private String name;
+    private int age;
+    public Dog(String n, int a)
+    {
+        name = n;
+        age = a;
+    }
+    public Dog(String n)
+    {
+        name = n;
+        age = 0;
+    }
+    public Dog()
+    {
+        name = "Bub";
+        age = 0;
+    }
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    public void setAge(int age)
+    {
+        this.age = age;
+    }
+    public String getName(String name)
+    {
+        return name;
+    }
+    public int getAge()
+    {
+        return age;
+    }
+    public String toString()
+    {
+        return "Name: " + this.name + "Age: " + this.age;
+    }
+    public void intoHumanAge()
+    {
+        System.out.println(name + " is " + age*7 + " human years old.");
+    }
+}
