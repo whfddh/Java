@@ -1,0 +1,12 @@
+public class BallTester {
+    public static void main(String[] args) {
+        Ball ball_1 = new Ball("basketball", 6.50, 56);
+        Ball ball_2 = new Ball("tennis", 0.58, 69);
+        Ball ball_3 = new Ball("volleyball", 2.8, 36);
+        ball_3.setSpeed(1);
+        System.out.println(ball_3);
+        ball_1.ballMomentum();
+        ball_2.ballMomentum();
+        ball_3.ballMomentum();
+    }
+}
